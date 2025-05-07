@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+
+<head><link href="manifest.json" rel="manifest"/><meta content="#285774" name="theme-color"/><script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .catch(console.error);
+  });
+}
+</script>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guía de Contactos Facultad de Derechos y Ciencias Sociales - UCA Rosario</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 1rem; background: #ffffff; color: #333; }
+    header { background: #285774; color: #fff; padding: 1rem; text-align: center; border-radius: 8px; }
+    .section-button { background: #285774; color: #fff; padding: 1rem; margin: 1rem 0 0.5rem; border-radius: 10px; cursor: pointer; font-weight: bold; text-align: center; }
+    .section-button:hover { background: #285774; opacity: 0.9; }
+    .section { display: none; background: #fff; padding: 1rem; border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    a { color: #285774; text-decoration: none; }
+    ul { margin-top: 0.5rem; }
+  </style>
+</meta></head>
+<body>
+<header><h1>Guía de Contactos Facultad de Derecho y Ciencias Sociales - UCA Rosario</h1></header>
+<div>
+<!-- Secretaría de Decanato -->
+<div class="section-button" onclick="toggle('decanato')">🏛️ Secretaría de Decanato</div>
+<div class="section" id="decanato">
+<p><strong>Secretaria:</strong> Gisela Noemí Ramírez<br/>
+         ☎️ 0810-220-0822 (Int. 7519)<br/>
+         📱 <a href="https://wa.me/5493416455261" target="_blank">+54 9 341 645 5261</a><br/>
+         📧 <a href="mailto:decanatoderecho_rosario@uca.edu.ar">decanatoderecho_rosario@uca.edu.ar</a><br/>
+         📍 Edificio 1 - 1º Piso<br/>
+         ⏰ Lunes a viernes, 9:00 a 18:00 hs</p>
+<ul>
+<li>✔️ Entrevistas con Decano y/o Secretario Académico</li>
+<li>✔️ Presentación de propuestas de actividades de extensión - único ingreso</li>
+</ul>
+</div>
+<!-- Coordinación de Docentes -->
+<div class="section-button" onclick="toggle('docente')">📚 Coordinación de Docentes</div>
+<div class="section" id="docente">
+<p><strong>Celina Fierro</strong><br/>
+         📧 <a href="mailto:docentesderysociales@uca.edu.ar">docentesderysociales@uca.edu.ar</a> / <a href="mailto:celina_fierro@uca.edu.ar">celina_fierro@uca.edu.ar</a><br/>
+         ☎️ 0810‑220‑0822 (Int. 7505)<br/>
+         📍 Edificio 3 - 1º Piso, Oficina 113</p>
+<ul>
+<li>✔️ Confirmación o modificación de horarios de cursado o exámenes - antes de la publicación</li>
+<li>✔️ Devolución del calendario académico</li>
+<li>✔️ Inasistencias programadas</li>
+<li>✔️ Reprogramación de clases (reserva de aulas)</li>
+<li>✔️ Solicitud de aulas especiales</li>
+<li>✔️ Certificados de asistencia a mesas de examen</li>
+<li>✔️ Actualización de datos personales</li>
+</ul>
+<p><strong>María Eugenia Falconi</strong><br/>
+         📧 <a href="mailto:eugenia_falconi@uca.edu.ar">eugenia_falconi@uca.edu.ar</a><br/>
+         ☎️ 0810‑220‑0822 (Int. 7507)<br/>
+         📍 Edificio 3 - 1º Piso, Oficina 114</p>
+<ul>
+<li>✔️ Certificados de nombramiento y categoría docente</li>
+<li>✔️ Solicitud de licencias</li>
+<li>✔️ Consultas sobre liquidaciones</li>
+<li>✔️ Legajos</li>
+<li>✔️ Credenciales docentes</li>
+</ul>
+</div>
+<!-- Coordinación de Alumnos -->
+<div class="section-button" onclick="toggle('alumnos')">🧑‍🎓 Coordinación de Alumnos</div>
+<div class="section" id="alumnos">
+<p><strong>Patricia Novaro</strong><br/>
+         ☎️ 0810‑220‑0822 (Int. 7506)<br/>
+         📧 <a href="mailto:patricia_novaro@uca.edu.ar">patricia_novaro@uca.edu.ar</a><br/>
+         📍 Planta Baja - Edificio 3</p>
+<ul>
+<li>✔️ Inconvenientes con alumnos que requieran una atención personalizada</li>
+<li>✔️ Inscripción de alumnos que no figuran en la lista de asistencia</li>
+<li>✔️ Tramitar los seguros de vida para visitas fuera de la Facultad (mínimo 7 días de anticipación)</li>
+</ul>
+<p><strong>Mariela Fernández</strong><br/>
+         ☎️ 0810‑220‑0822 (Int. 7500)<br/>
+         📧 <a href="mailto:mariela_fernandez@uca.edu.ar">mariela_fernandez@uca.edu.ar</a><br/>
+         📍 1º Piso - Edificio 3, Oficina 113</p>
+<ul>
+<li>✔️ Dudas o inconvenientes con alumnos relativos al dictado de clases
+Inscripción de alumnos que no figuran en la lista de asistencia</li>
+<li>✔️ Tramitar los seguros de vida para visitas fuera de la Facultad -mínimo 7 días de anticipación-</li>
+<li>✔️ Consultas referidas a cierres de actas, libros de temas, etc.</li>
+</ul>
+</div>
+<!-- WhatsApp Institucional -->
+<div class="section-button" onclick="toggle('whatsapp')">📲 WhatsApp Institucional</div>
+<div class="section" id="whatsapp">
+<p>☎️ <a href="https://wa.me/5493416187944" target="_blank">+54 9 3416 18‑7944</a><br/>
+         ⏰ Lunes a viernes de 7:30 a 19:30 hs</p>
+<ul>
+<li>✔️ Informar ausencias o retrasos imprevistos (indicar nombre, carrera, materia, comisión y horario)</li>
+<li>✔️ Responder al mensaje recordatorio de mesa de examen</li>
+</ul>
+</div>
+<!-- Posgrado y Extensión -->
+<div class="section-button" onclick="toggle('posgrado')">🎓 Posgrado y Extensión</div>
+<div class="section" id="posgrado">
+<p>☎️ 0810‑220‑0822 (Int. 7516)<br/>
+         📱 <a href="https://wa.me/5493416455183" target="_blank">+54 9 3416 45‑5183</a><br/>
+         📧 <a href="mailto:posgradoderecho_rosario@uca.edu.ar">posgradoderecho_rosario@uca.edu.ar</a></p>
+<p><strong>Carolina Denovi</strong><br/>
+         Oficina: Edificio 3, Planta Baja, Oficina 6<br/>
+         ⏰ Lunes a viernes, 10:00 a 18:00 hs</p>
+<p><strong>Gilda Echeveste</strong><br/>
+         Oficina: Edificio 3, Planta Baja, Oficina 4<br/>
+         ⏰ Lunes a viernes, 12:00 a 20:00 hs</p>
+<p><strong>Stefano Bellini</strong><br/>
+         Oficina: Edificio 3, Planta Baja, Oficina 4<br/>
+         ⏰ Lunes a viernes, 12:00 a 20:00 hs</p>
+</div>
+<!-- Orientación Universitaria y Tutorías -->
+<div class="section-button" onclick="toggle('tutorias')">🧭 Orientación y Tutorías</div>
+<div class="section" id="tutorias">
+<p><strong>Lic. Martín G. Trucco</strong><br/>
+<p>☎️ <a href="https://wa.me/5493416444059" target="_blank">+54 9 3416 44‑4059</a><br/>
+         📧 <a href="mailto:martin_trucco@uca.edu.ar">martin_trucco@uca.edu.ar</a><br/>
+         📍 Planta Baja, Edificio 3</p>
+</p></div>
+<!-- Asistencia Sistema CVAR -->
+<div class="section-button" onclick="toggle('cvar')">🛠️ Asistencia Sistema CVAR</div>
+<div class="section" id="cvar">
+<p><strong>Responsable:</strong> María Cecilia Marcolín<br/>
+         📧 <a href="mailto:ceciliamarcolin@uca.edu.ar">ceciliamarcolin@uca.edu.ar</a></p>
+</div>
+<!-- Aulas EVA -->
+<div class="section-button" onclick="toggle('eva')">🖥️ Aulas EVA</div>
+<div class="section" id="eva">
+<p><strong>Mora Toscanelli</strong><br/>
+         📧 <a href="mailto:moratoscanelli@uca.edu.ar">moratoscanelli@uca.edu.ar</a><br/>
+         📍 1º Piso, Edificio 3</p>
+</div>
+<!-- Soporte Informático -->
+<div class="section-button" onclick="toggle('soporte')">💻 Soporte Informático</div>
+<div class="section" id="soporte">
+<p><strong>Cristian Mazzeo</strong><br/>
+<p>☎️ <a href="https://wa.me/5493416802203" target="_blank">+54 9 3416 80‑2203</a><br/>
+         📧 <a href="mailto:sistemasrosario@uca.edu.ar">sistemasrosario@uca.edu.ar</a><br/>
+         📍 1º Piso, Edificio 3</p>
+<ul>
+<li>✔️ Inconvenientes con cualquier recurso informático y digital</li>
+</ul>
+</p></div>
+<!-- Logística y Vida Universitaria -->
+<div class="section-button" onclick="toggle('logistica')">🗃️ Logística y Vida Universitaria</div>
+<div class="section" id="logistica">
+<p><strong>Ana Díaz Chavez</strong><br/>
+<p>☎️ <a href="https://wa.me/5493417077263" target="_blank">+54 9 3417 07‑7263</a><br/>
+         📧 <a href="mailto:vidauniversitariaros@uca.edu.ar">vidauniversitariaros@uca.edu.ar</a><br/>
+         📍 Planta Baja, Edificio 3<br/>
+         ⏰ Lunes a viernes, 7:30 a 20:30 hs</p>
+<ul>
+<li>✔️ Solicitud de fibrones y borradores</li>
+<li>✔️ Climatización de las aulas</li>
+<li>✔️ Consultas sobre aulas y pizarrones frente a Vida Universitaria</li>
+</ul>
+</p></div>
+<!-- Biblioteca Central -->
+<div class="section-button" onclick="toggle('biblioteca')">📖 Biblioteca Central UCA Rosario</div>
+<div class="section" id="biblioteca">
+<p><strong>Pablo Murray</strong><br/>
+<p>☎️ <a href="https://wa.me/5493415621988" target="_blank">+54 9 3415 62‑1988</a><br/>
+         📧 <a href="mailto:biblioteca_rosario@uca.edu.ar">biblioteca_rosario@uca.edu.ar</a><br/>
+         🌐 <a href="https://biblioteca.uca.edu.ar" target="_blank">biblioteca.uca.edu.ar</a><br/>
+         📍 Edificio 2, Pisos 3° al 5°<br/>
+         ⏰ Lunes a viernes, 7:30 a 20:00 hs</p>
+</p></div>
+<!-- Fotocopiadora y Librería -->
+<div class="section-button" onclick="toggle('fotocopia')">📚 Fotocopiadora y Librería</div>
+<div class="section" id="fotocopia">
+<p>☎️ <a href="https://wa.me/5496355165" target="_blank">+54 9 3416 35‑5165</a><br/>
+         📧 <a href="mailto:copiasuca@gmail.com">copiasuca@gmail.com</a><br/>
+         📍 Planta Baja, Edificio 4<br/>
+         ⏰ Lunes a viernes, 7:30 a 20:30 hs</p>
+</div>
+<!-- Redes Sociales -->
+<div class="section-button" onclick="toggle('redes')">🌐 Redes Sociales</div>
+<div class="section" id="redes">
+<ul>
+<li>📸 Instagram: <a href="https://instagram.com/ucaderechoysociales" target="_blank">@ucaderechoysociales</a></li>
+<li>👍 Facebook: Facultad de Derecho y Cs. Sociales UCA Rosario</li>
+<li>🔗 LinkedIn: Facultad de Derecho y Ciencias Sociales del Rosario</li>
+</ul>
+</div>
+<!-- Urgencias Médicas -->
+<div class="section-button" onclick="toggle('urgencias')">🚑 Urgencias Médicas</div>
+<div class="section" id="urgencias">
+<p>Dirigirse a: Vida Universitaria<br/>
+         ⏰ Lunes a viernes, 07:30 a 21:00 hs<br/>
+         ☎️ 0810‑220‑0822 (Int. 7400)<br/>
+         📍 Planta Baja, Edificio 3</p>
+<p>Dirigirse a: Guardia<br/>
+         ⏰ Lunes a sábado, 07:00 a 23:00 hs<br/>
+         📍 Planta Baja, Edificios 1, 3 y 4</p>
+</div>
+</div>
+<script>
+    function toggle(id) {
+      const sec = document.getElementById(id);
+      sec.style.display = sec.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
